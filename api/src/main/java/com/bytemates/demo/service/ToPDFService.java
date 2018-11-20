@@ -13,13 +13,13 @@ import java.util.Arrays;
 @Service
 public class ToPDFService {
 
-    public static String[] imageFormats = new String[]{".png", ".jpg", ".jpeg", ".svg"};
-    public static String[] textFormats = new String[]{".txt"};
+    public static String[] imageFormats = new String[]{"png", "jpg", "jpeg", "svg"};
+    public static String[] textFormats = new String[]{"txt"};
 
     public static byte[] getByteArray(MultipartFile multipartFile) throws IOException, DocumentException {
         byte[] content = null;
 
-        String[] fileExt = multipartFile.getOriginalFilename().split(".");
+        String[] fileExt = multipartFile.getOriginalFilename().split("\\.");
         String fileName = fileExt[0];
         String extension = fileExt[1];
 
