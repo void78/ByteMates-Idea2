@@ -16,7 +16,7 @@ const renderField = ({ input, label, type, meta: { touched, error } }) => (
 const UserLoginForm = props => {
   const { error, handleSubmit, pristine, reset, submitting, submitSucceeded } = props
   return (
-      <div>
+      <div className="text-center">
     <form onSubmit={handleSubmit(submit)}>
       <Field
         name="username"

@@ -66,7 +66,6 @@ export default class FileUpload extends React.Component {
             <option value="PASSPORT">Passport</option>
             <option value="ADDRESS">Address</option>
             <option value="IPQ">Investor Profile Questioniare</option>
-            <option value="SIGNATURE">Signature</option>
           </select>
           <button disabled={fileLen===0} onClick={this.uploadSingleFile.bind(this)}> Save </button>
         </section>
